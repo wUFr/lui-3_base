@@ -1,0 +1,25 @@
+//
+// TRANSITION
+//
+
+.lui.transition {
+	.this(@args){
+		transition: @args;
+	}
+
+	.delay(@delay) {
+		transition-delay: @delay;
+	}
+
+	.duration(@duration) {
+		transition-duration: @duration;
+	}
+
+	.property(@property:all) {
+		transition-property: @property;
+	}
+
+	.timing-function(@function:ease) {
+		transition-timing-function: @function;
+	}
+}

@@ -1,0 +1,39 @@
+//
+// GRANDIENT
+//
+
+.lui.gradient {
+	.linear {
+		.this(@args){
+			background: linear-gradient(@args);
+		}
+
+		.vertical(@args){
+			.this(@args);
+		}
+
+		.horizontal(@args){
+			background: linear-gradient(90deg, @args);
+		}
+
+		.diagonal(){
+			.left2right(@args){
+				background: linear-gradient(135deg, @args);
+			}
+
+			.right2left(@args){
+				background: linear-gradient(225deg, @args);
+			}
+		}
+	}
+
+	.radial {
+		.this(@args){
+			background: radial-gradient(@args);
+		}
+
+		.repeat(@args){
+			background: repeating-radial-gradient(@args);
+		}
+	}
+}

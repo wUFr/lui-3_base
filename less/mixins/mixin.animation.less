@@ -1,0 +1,45 @@
+//
+// ANIMATIONS
+//
+
+.lui.animation {
+	.this(@args){
+		animation: @args;
+	}
+
+	.delay(@delay){
+		animation-delay: @delay;
+	}
+
+	.direction(@direction){
+		animation-direction: @direction;
+	}
+
+	.duration(@duration){
+		animation-duration: @duration;
+	}
+
+	.fill-mode(@mode){
+		animation-fill-mode: @mode;
+	}
+
+	.iteration-count(@count){
+		animation-iteration-count: @count;
+	}
+
+	.count(@count){
+		.iteration-count(@count);
+	}
+
+	.name(@name){
+		animation-name: @name;
+	}
+
+	.play-state(@state){
+		animation-play-state: @state;
+	}
+
+	.timing-function(@function){
+		animation-timing-function: @function;
+	}
+}

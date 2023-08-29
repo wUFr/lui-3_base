@@ -1,0 +1,29 @@
+//
+// USER SELECT
+//
+
+.lui.user-select {
+	.this(@args){
+		user-select: @args; // native support
+	}
+
+	.none(){
+		.this(none);
+	}
+
+	.disable(){
+		.none();
+	}
+
+	.text(){
+		.this(text);
+	}
+
+	.all(){
+		.this(all);
+	}
+
+	.contain(){
+		.this(contain);
+	}
+}
